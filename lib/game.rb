@@ -64,7 +64,8 @@ class Game
       victory = board.check_victory?(player1.glyph)
       finalTimer = get_final_timer?
       if victory
-        puts "Victoire du joueur (1)"
+        puts "Victoire de #{player1.name}"
+
         check = true
       elsif finalTimer
         puts "Égalité !!!"
@@ -76,7 +77,8 @@ class Game
         victory = board.check_victory?(player2.glyph)
         finalTimer = get_final_timer?
         if victory
-          puts "Victoire du joueur (2)"
+          puts "Victoire de #{player2.name}"
+
           check = true
         elsif finalTimer
           puts "Égalité !!!"
